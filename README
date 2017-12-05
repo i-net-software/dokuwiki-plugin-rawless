@@ -1,6 +1,6 @@
 rawless Plugin for DokuWiki
 
-Exports the raw less styles
+Exports the raw less styles. You have to add the parameter `rawless` to the css url.
 
 All documentation for this plugin can be found at
 https://dokuwiki.org/plugins:rawless
