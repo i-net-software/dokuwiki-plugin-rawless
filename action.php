@@ -37,7 +37,10 @@ class action_plugin_rawless extends DokuWiki_Action_Plugin {
         if ( $INPUT->has('rawless') ) {
             spl_autoload_register(function($class){
                 if ( $class == 'lessc' ) {
-                    include 'lessc.inc.php';
+                    require_once __DIR__ . '/lessc.inc.php';
+                }
+                if ( $class === 'LesserPHP\\Lessc' ) {
+                    require_once __DIR__ . '/lesserc.inc.php';
                 }
             }, true, true);
         }

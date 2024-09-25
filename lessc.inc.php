@@ -15,6 +15,4 @@ class lessc {
     public function setPreserveComments( $preserve ) {
         return $preserve;
     }
-
 }
-
